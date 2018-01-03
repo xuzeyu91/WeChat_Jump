@@ -207,9 +207,12 @@ namespace WindowClient
             {
                 time = Math.Round(Gen * 2.6, 0);
             }
-            else if (Gen < 250)
+            else if (Gen < 250&&Gen>=200)
             {
                 time = Math.Round(Gen * 3.3, 0);
+            }
+            if (Gen < 200) {
+                time = Math.Round(Gen * 3.25, 0);
             }
             else
             {
@@ -236,7 +239,7 @@ namespace WindowClient
             double time;
             if (Gen < 200)
             {
-                time = Math.Round(Gen * 2.2, 0);
+                time = Math.Round(Gen * 2.25, 0);
             }
             else if (Gen >= 200 && Gen < 250)
             {
