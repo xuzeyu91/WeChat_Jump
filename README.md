@@ -24,7 +24,10 @@ adb shell input swipe x y x y time(ms)
 
 安装项目中Android的程序。然后在WinForm中点击初始化进行端口转发后，创建Socket连接，即可开始进行跳一跳。
 
+
+<br/>
 QQ 交流
 
 - 556433450
+<br/>
 微信群：![](https://github.com/xuzeyu91/WeChat_Jump/blob/master/wxgroup.jpg)
