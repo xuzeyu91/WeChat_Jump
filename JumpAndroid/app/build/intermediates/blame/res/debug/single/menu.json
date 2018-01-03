@@ -8,6 +8,10 @@
         "source": "F:\\xm\\qunkongdemo\\myDemo\\testUsbConnect\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
+        "merged": "F:\\xm\\WeChat_Jump\\JumpAndroid\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "F:\\xm\\WeChat_Jump\\JumpAndroid\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
         "merged": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\src\\main\\res\\menu\\main.xml"
     },

@@ -12,6 +12,10 @@
         "source": "F:\\xm\\qunkongdemo\\AndroidControll-master\\android-side\\testUsbConnect\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "F:\\xm\\WeChat_Jump\\JumpAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "F:\\xm\\WeChat_Jump\\JumpAndroid\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "F:\\Users\\harveyprince\\Documents\\android_studio_workspace\\testUsbConnect\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
         "source": "F:\\Users\\harveyprince\\Documents\\android_studio_workspace\\testUsbConnect\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
