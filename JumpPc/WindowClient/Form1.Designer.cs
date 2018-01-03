@@ -106,7 +106,8 @@
             this.pic_logo2.Image = global::WindowClient.Properties.Resources.结束;
             this.pic_logo2.Location = new System.Drawing.Point(142, 704);
             this.pic_logo2.Name = "pic_logo2";
-            this.pic_logo2.Size = new System.Drawing.Size(32, 32);
+            this.pic_logo2.Size = new System.Drawing.Size(20, 20);
+            this.pic_logo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_logo2.TabIndex = 10;
             this.pic_logo2.TabStop = false;
             this.pic_logo2.Visible = false;
@@ -116,7 +117,8 @@
             this.pic_logo1.Image = global::WindowClient.Properties.Resources.开始__1_;
             this.pic_logo1.Location = new System.Drawing.Point(55, 704);
             this.pic_logo1.Name = "pic_logo1";
-            this.pic_logo1.Size = new System.Drawing.Size(32, 32);
+            this.pic_logo1.Size = new System.Drawing.Size(20, 20);
+            this.pic_logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_logo1.TabIndex = 9;
             this.pic_logo1.TabStop = false;
             this.pic_logo1.Visible = false;

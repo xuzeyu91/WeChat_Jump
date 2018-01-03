@@ -192,6 +192,53 @@ namespace WindowClient
            
         }
 
+        private double MathLeft(double gen) {
+            double time=0;
+            if (gen > 200 && gen <= 210) {
+                time = Math.Round(gen * 3.28, 0);
+            }
+            else if (gen > 300 && gen >= 250)
+            {
+                time = Math.Round(gen * 2.8, 0);
+            }
+            else if (gen < 250 && gen >= 240)
+            {
+                time = Math.Round(gen * 3.3, 0);
+            }
+            else if (gen < 240 && gen >= 200)
+            {
+                time = Math.Round(gen * 3.4, 0);
+            }
+            if (gen < 200)
+            {
+                time = Math.Round(gen * 3.35, 0);
+            }
+            else
+            {
+                time = Math.Round(gen * 3.2, 0);
+            }
+            return time;
+        }
+        private double MathRight(double Gen)
+        {
+            double time = 0;
+            if (Gen < 200)
+            {
+                time = Math.Round(Gen * 2.25, 0);
+            }
+            else if (Gen >= 200 && Gen < 250)
+            {
+                time = Math.Round(Gen * 2.4, 0);
+            }
+            else
+            {
+                time = Math.Round(Gen * 2.6, 0);
+
+            }
+            return time;
+        }
+
+
         private void btn_left_Click(object sender, EventArgs e)
         {
             int x1, x2, y1, y2;
@@ -202,22 +249,7 @@ namespace WindowClient
             int MathX = System.Math.Abs(x1 - x2);
             int MathY = System.Math.Abs(y1 - y2);
             double Gen = Math.Round(Math.Sqrt(MathX * MathX + MathY * MathY), 2);
-            double time;
-            if (Gen > 300)
-            {
-                time = Math.Round(Gen * 2.6, 0);
-            }
-            else if (Gen < 250&&Gen>=200)
-            {
-                time = Math.Round(Gen * 3.3, 0);
-            }
-            if (Gen < 200) {
-                time = Math.Round(Gen * 3.25, 0);
-            }
-            else
-            {
-                time = Math.Round(Gen * 3.1, 0);
-            }
+            double time = MathLeft(Gen);
 
             clientSocket.Send(Encoding.UTF8.GetBytes("tyt" + time.ToString()));
             pic_logo1.Visible = false;
@@ -236,20 +268,9 @@ namespace WindowClient
             int MathX = System.Math.Abs(x1 - x2);
             int MathY = System.Math.Abs(y1 - y2);
             double Gen = Math.Round(Math.Sqrt(MathX * MathX + MathY * MathY), 2);
-            double time;
-            if (Gen < 200)
-            {
-                time = Math.Round(Gen * 2.25, 0);
-            }
-            else if (Gen >= 200 && Gen < 250)
-            {
-                time = Math.Round(Gen * 2.4, 0);
-            }
-            else
-            {
-                time = Math.Round(Gen * 2.6, 0);
+            double time = MathRight(Gen);
 
-            }
+
             clientSocket.Send(Encoding.UTF8.GetBytes("tyt" + time.ToString()));
             pic_logo1.Visible = false;
             pic_logo2.Visible = false;
