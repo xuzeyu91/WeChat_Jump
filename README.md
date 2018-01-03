@@ -26,7 +26,9 @@ adb shell input swipe x y x y time(ms)
 
 
 <br/>
-QQ 交流
+QQ群
 
 - 556433450
-微信群：![](https://github.com/xuzeyu91/WeChat_Jump/blob/master/wxgroup.jpg)
+微信群：
+<br/>
+![](https://github.com/xuzeyu91/WeChat_Jump/blob/master/wxgroup.jpg)
