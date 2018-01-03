@@ -90,8 +90,8 @@
       <file leaf-file-name="ThreadReadWriterIOSocket.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chenhl/testusbconnect/ThreadReadWriterIOSocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
-              <caret line="45" column="59" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="59" />
+            <state relative-caret-position="361">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="method#readCMDFromSocket#0;class#ThreadReadWriterIOSocket#0" expanded="false" />
                 <element signature="method#calculateInSampleSize#0;class#ThreadReadWriterIOSocket#0" expanded="false" />
@@ -2621,8 +2621,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chenhl/testusbconnect/ThreadReadWriterIOSocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="45" column="59" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="59" />
+        <state relative-caret-position="361">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="method#readCMDFromSocket#0;class#ThreadReadWriterIOSocket#0" expanded="false" />
             <element signature="method#calculateInSampleSize#0;class#ThreadReadWriterIOSocket#0" expanded="false" />
