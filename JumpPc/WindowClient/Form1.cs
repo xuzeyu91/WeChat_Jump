@@ -139,9 +139,7 @@ namespace WindowClient
 
         private void button3_Click(object sender, EventArgs e)
         {
-            RunCmd2("adb", "forward tcp:12580 tcp:10086");
-            //RunCmd2("adb", "shell am broadcast -a NotifyServiceStart");
-            InitSocket();
+            
 
         }
         /// <summary>
@@ -151,7 +149,7 @@ namespace WindowClient
         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            clientSocket.Send(Encoding.UTF8.GetBytes("start"));
+            
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
@@ -191,6 +189,42 @@ namespace WindowClient
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btn_left_Click(object sender, EventArgs e)
+        {
+            int x1, x2, y1, y2;
+            x1 = pic_logo1.Location.X;
+            x2 = pic_logo2.Location.X;
+            y1 = pic_logo1.Location.X;
+            y2 = pic_logo2.Location.Y;
+            int MathX = System.Math.Abs(x1 - x2);
+            int MathY = System.Math.Abs(y1 - y2);
+            double Gen = Math.Round(Math.Sqrt(MathX * MathX + MathY * MathY), 2);
+            double time;
+            if (Gen > 300)
+            {
+                time = Math.Round(Gen * 2.6, 0);
+            }
+            else if (Gen < 250)
+            {
+                time = Math.Round(Gen * 3.3, 0);
+            }
+            else
+            {
+                time = Math.Round(Gen * 3.1, 0);
+            }
+
+            clientSocket.Send(Encoding.UTF8.GetBytes("tyt" + time.ToString()));
+            pic_logo1.Visible = false;
+            pic_logo2.Visible = false;
+            label1.Text = "距离：" + Gen.ToString();
+            label2.Text = "时间：" + time.ToString();
+        }
+
+        private void btn_right_Click(object sender, EventArgs e)
+        {
             int x1, x2, y1, y2;
             x1 = pic_logo1.Location.X;
             x2 = pic_logo2.Location.X;
@@ -202,6 +236,10 @@ namespace WindowClient
             double time;
             if (Gen < 200)
             {
+                time = Math.Round(Gen * 2.2, 0);
+            }
+            else if (Gen >= 200 && Gen < 250)
+            {
                 time = Math.Round(Gen * 2.4, 0);
             }
             else
@@ -209,9 +247,6 @@ namespace WindowClient
                 time = Math.Round(Gen * 2.6, 0);
 
             }
-               
-           
-
             clientSocket.Send(Encoding.UTF8.GetBytes("tyt" + time.ToString()));
             pic_logo1.Visible = false;
             pic_logo2.Visible = false;
@@ -219,33 +254,16 @@ namespace WindowClient
             label2.Text = "时间：" + time.ToString();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_init_Click(object sender, EventArgs e)
         {
-            int x1, x2, y1, y2;
-            x1 = pic_logo1.Location.X;
-            x2 = pic_logo2.Location.X;
-            y1 = pic_logo1.Location.X;
-            y2 = pic_logo2.Location.Y;
-            int MathX = System.Math.Abs(x1 - x2);
-            int MathY = System.Math.Abs(y1 - y2);
-            double Gen = Math.Round(Math.Sqrt(MathX * MathX + MathY * MathY), 2);
-            double time;
-            if (Gen > 300) {
-                time = Math.Round(Gen * 2.6, 0);
-            }
-            else if (Gen < 250)
-            {
-                time = Math.Round(Gen * 3.3, 0);
-            }
-            else {
-                time = Math.Round(Gen * 3, 0);
-            }
+            RunCmd2("adb", "forward tcp:12580 tcp:10086");
+            //RunCmd2("adb", "shell am broadcast -a NotifyServiceStart");
+            InitSocket();
+        }
 
-            clientSocket.Send(Encoding.UTF8.GetBytes("tyt" + time.ToString()));
-            pic_logo1.Visible = false;
-            pic_logo2.Visible = false;
-            label1.Text = "距离：" + Gen.ToString();
-            label2.Text = "时间：" + time.ToString();
+        private void btn_screen_Click(object sender, EventArgs e)
+        {
+            clientSocket.Send(Encoding.UTF8.GetBytes("start"));
         }
     }
 }

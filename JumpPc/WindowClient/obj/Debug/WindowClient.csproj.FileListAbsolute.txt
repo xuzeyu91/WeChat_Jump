@@ -79,3 +79,16 @@ F:\学习\TiaoYiTiao\Jump_Pc\WindowClient\obj\Debug\WindowClient.csproj.Generate
 F:\学习\TiaoYiTiao\Jump_Pc\WindowClient\obj\Debug\WindowClient.csproj.CoreCompileInputs.cache
 F:\学习\TiaoYiTiao\Jump_Pc\WindowClient\obj\Debug\WindowClient.exe
 F:\学习\TiaoYiTiao\Jump_Pc\WindowClient\obj\Debug\WindowClient.pdb
+F:\xm\WeChat_Jump\JumpPc\WindowClient\bin\Debug\WindowClient.exe.config
+F:\xm\WeChat_Jump\JumpPc\WindowClient\bin\Debug\WindowClient.exe
+F:\xm\WeChat_Jump\JumpPc\WindowClient\bin\Debug\WindowClient.pdb
+F:\xm\WeChat_Jump\JumpPc\WindowClient\bin\Debug\Newtonsoft.Json.dll
+F:\xm\WeChat_Jump\JumpPc\WindowClient\bin\Debug\NetDimension.NanUI.pdb
+F:\xm\WeChat_Jump\JumpPc\WindowClient\bin\Debug\Newtonsoft.Json.xml
+F:\xm\WeChat_Jump\JumpPc\WindowClient\obj\Debug\WindowClient.csprojResolveAssemblyReference.cache
+F:\xm\WeChat_Jump\JumpPc\WindowClient\obj\Debug\WindowClient.Form1.resources
+F:\xm\WeChat_Jump\JumpPc\WindowClient\obj\Debug\WindowClient.Properties.Resources.resources
+F:\xm\WeChat_Jump\JumpPc\WindowClient\obj\Debug\WindowClient.csproj.GenerateResource.Cache
+F:\xm\WeChat_Jump\JumpPc\WindowClient\obj\Debug\WindowClient.csproj.CoreCompileInputs.cache
+F:\xm\WeChat_Jump\JumpPc\WindowClient\obj\Debug\WindowClient.exe
+F:\xm\WeChat_Jump\JumpPc\WindowClient\obj\Debug\WindowClient.pdb

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_screen = new System.Windows.Forms.Button();
+            this.btn_right = new System.Windows.Forms.Button();
+            this.btn_init = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_left = new System.Windows.Forms.Button();
             this.pic_logo2 = new System.Windows.Forms.PictureBox();
             this.pic_logo1 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,35 +43,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btn_screen
             // 
-            this.button2.Location = new System.Drawing.Point(112, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "获取屏幕";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_screen.Location = new System.Drawing.Point(112, 10);
+            this.btn_screen.Name = "btn_screen";
+            this.btn_screen.Size = new System.Drawing.Size(75, 23);
+            this.btn_screen.TabIndex = 3;
+            this.btn_screen.Text = "获取屏幕";
+            this.btn_screen.UseVisualStyleBackColor = true;
+            this.btn_screen.Click += new System.EventHandler(this.btn_screen_Click);
             // 
-            // button1
+            // btn_right
             // 
-            this.button1.Location = new System.Drawing.Point(457, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "向右";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_right.Location = new System.Drawing.Point(457, 10);
+            this.btn_right.Name = "btn_right";
+            this.btn_right.Size = new System.Drawing.Size(47, 23);
+            this.btn_right.TabIndex = 8;
+            this.btn_right.Text = "向右";
+            this.btn_right.UseVisualStyleBackColor = true;
+            this.btn_right.Click += new System.EventHandler(this.btn_right_Click);
             // 
-            // button3
+            // btn_init
             // 
-            this.button3.Location = new System.Drawing.Point(24, 10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "初始化";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_init.Location = new System.Drawing.Point(24, 10);
+            this.btn_init.Name = "btn_init";
+            this.btn_init.Size = new System.Drawing.Size(75, 23);
+            this.btn_init.TabIndex = 11;
+            this.btn_init.Text = "初始化";
+            this.btn_init.UseVisualStyleBackColor = true;
+            this.btn_init.Click += new System.EventHandler(this.btn_init_Click);
             // 
             // label1
             // 
@@ -91,15 +91,15 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "时间：";
             // 
-            // button4
+            // btn_left
             // 
-            this.button4.Location = new System.Drawing.Point(407, 10);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(44, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "向左";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_left.Location = new System.Drawing.Point(407, 10);
+            this.btn_left.Name = "btn_left";
+            this.btn_left.Size = new System.Drawing.Size(44, 23);
+            this.btn_left.TabIndex = 14;
+            this.btn_left.Text = "向左";
+            this.btn_left.UseVisualStyleBackColor = true;
+            this.btn_left.Click += new System.EventHandler(this.btn_left_Click);
             // 
             // pic_logo2
             // 
@@ -136,15 +136,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(516, 782);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_left);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_init);
             this.Controls.Add(this.pic_logo2);
             this.Controls.Add(this.pic_logo1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_right);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_screen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -161,15 +161,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_screen;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_right;
         private System.Windows.Forms.PictureBox pic_logo1;
         private System.Windows.Forms.PictureBox pic_logo2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_init;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_left;
     }
 }
 
